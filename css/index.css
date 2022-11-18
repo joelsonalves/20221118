@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+@keyframes balanco {
+    0%      {transform: rotate(15deg);}
+    25%     {transform: rotate(0deg);}
+    50%     {transform: rotate(-15deg);}
+    75%     {transform: rotate(0deg);}
+    100%    {transform: rotate(15deg);}
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Sono', sans-serif;
+    background-image: url('../img/floral.png');
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+img {
+    animation-name: balanco;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    cursor:pointer;
+}
+
+div {
+    display: none;
+    background-color: #555;
+    padding: 2rem;
+    color: pink;
+    border-radius: 25px;
+    text-align: center;
+}
+
+p {
+    padding: 0.25rem 0;
+    font-size: 1.5rem;
+}  
+
+strong {
+    font-size: 3rem;
+}
